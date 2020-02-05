@@ -1,0 +1,106 @@
+/* BARRA DE NAVEGACION*/
+.navbar {
+    margin-bottom: 0px!important;
+}
+/*estilos para EL MENU DE LISTA*/
+/* MENU */
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px!important;
+  }
+  ul.elementos li {
+    width: 50%;
+    padding: 0px;
+    float: left;
+  }
+  @media only screen and (min-width:480px) {
+    ul.elementos li {
+      width: 50%;
+    }
+   
+  }
+  @media only screen and (min-width:768px) {
+   
+    ul.elementos li {
+      width: 25%;
+    }
+    div.items p {
+      font-size: 1em!important;
+      padding: 5px 10px!important;
+    }
+  }
+  
+  @media only screen and (min-width:992px) {
+   
+    div.items p {
+      font-size: 1.5em!important;
+      padding: 5px 10px!important;
+    }
+  }
+  
+  div.items {
+    position: relative;
+    overflow: hidden;
+  }
+  div.items img{
+    max-width: 100%;
+    filter: gray;
+    /* prefijos chrome safari */
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5 ease-in-out;
+  }
+  div.items:hover img {
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+  }
+  div.items p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    margin: 0;
+    background-color: rgba(12,0,102,0.5);
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    height: 20%;
+    font-size: .8em;
+    /* afectado el p con el hover */
+    -webkit-transition: all .5 ease-in-out;
+  }
+  /* afectado el p con el hover */
+  div.items:hover p{
+    bottom: -80px;
+    opacity: 0;
+  }
+
+    /* imagen principal */
+ .principal{
+    background-image: url("../img/index.jpg");
+    background-size: cover;
+    height: auto ;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+.jumbotron h1{
+  text-align: center;
+}
+.jumbotron p{
+  text-align: center;
+}
+  /* MEDIA QUERYS*/
+  @media only screen and (max-width:767px) {
+    .principal{
+      background-image: url("../img/index.jpg");
+      background-size: cover;
+      padding-bottom: 80px!important;
+      }
+  }
